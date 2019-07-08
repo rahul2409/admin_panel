@@ -9,74 +9,100 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+   
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
-    <p>
-        <h1>
-            Select your Primary Color here :
-        </h1>
-        <small><small>Primary includes the background color.</small></small>
-        <input type="color" name="primaryColor" id="primary" value="#ffffff">
-    </p>
-    <p>
-        <h1>Select your Secondary Color here: </h1>
-        <small><small>Secondary includes the contrast color of the backgrounds </small></small>
-        <input type="color" name="secondaryColor" id="secondary" value="#ffffff">
-    </p>
-    <p>
-        <h1>Select the color of the navbar</h1>
-        <small><small>This will be the color of the navbar</small></small>
-        <input type="color" name="navbarColor" id="navbar" value="#ffffff">
-    </p>
-    <p>
-        <h1>
-            Select your Font Color here :
-        </h1>
-        <small><small>This includes the font color </small></small>
-        <input type="color" name="fontColor" value="#ffffff">
-    </p>
-    <p>
-        <h1>Select the font of the whole website</h1>
-        <small><small>this will change the font style of your website</small></small>
-        <select name="fontFamily" id="fonts">
-            <option value="Andale Mono">Andale Mono</option>
-            <option value="Arial">Arial</option>
-            <option value="Arial Bold">Arial Bold</option>
-            <option value="Arial Italic">Arial Italic</option>
-            <option value="Arial Bold Italic">Arial Bold Italic</option>
-            <option value="Arial Black">Arial Black</option>
-            <option value="Comic Sans MS">Comic Sans MS</option>
-            <option value="Comic Sans MS Bold">Comic Sans MS Bold</option>
-            <option value="Courier New">Courier New</option>
-            <option value="Courier New Bold">Courier New Bold</option>
-            <option value="Courier New Italic">Courier New Italic</option>
-            <option value="Courier New Bold Italic">Courier New Bold Italic</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Georgia Bold">Georgia Bold</option>
-            <option value="Georgia Italic">Georgia Italic</option>
-            <option value="Georgia Bold Italic">Georgia Bold Italic</option>
-            <option value="Impact">Impact</option>
-            <option value="Lucida Console">Lucida Console</option>
-            <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
-            <option value="Marlett">Marlett</option>
-            <option value="Minion Web">Minion Web</option>
-            <option value="Symbol">Symbol</option>
-            <option value="Times New Roman">Times New Roman</option>
-            <option value="Times New Roman Bold">Times New Roman Bold</option>
-            <option value="Times New Roman Italic">Times New Roman Italic</option>
-            <option value="Times New Roman Bold Italic">Times New Roman Bold Italic</option>
-            <option value="Tahoma">Tahoma</option>
-            <option value="Trebuchet MS">Trebuchet MS</option>
-            <option value="Trebuchet MS Bold">Trebuchet MS Bold</option>
-            <option value="Trebuchet MS Italic">Trebuchet MS Italic</option>
-            <option value="Trebuchet MS Bold Italic">Trebuchet MS Bold Italic</option>
-            <option value="Verdana">Verdana</option>
-            <option value="Verdana Bold">Verdana Bold</option>
-            <option value="Verdana Italic">Verdana Italic</option>
-            <option value="Verdana Bold Italic">Verdana Bold Italic</option>
-            <option value="Webdings">Webdings</option>
-        </select>
-    </p>
+    <nav class="navbar navbar-expand-md">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link1</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link3</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <p>
+            <h1>
+                Select your Primary Color here :
+            </h1>
+            <small><small>Primary includes the background color.</small></small>
+            <input type="color" name="primaryColor" id="primary" value="#ffffff">
+        </p>
+        <p>
+            <h1>Select your Secondary Color here: </h1>
+            <small><small>Secondary includes the contrast color of the backgrounds </small></small>
+            <input type="color" name="secondaryColor" id="secondary" value="#ffffff">
+        </p>
+        <p>
+            <h1>Select the color of the navbar</h1>
+            <small><small>This will be the color of the navbar</small></small>
+            <input type="color" name="navbarColor" id="navbar" value="#ffffff">
+        </p>
+        <p>
+            <h1>
+                Select your Font Color here :
+            </h1>
+            <small><small>This includes the font color </small></small>
+            <input type="color" name="fontColor" value="#000000">
+        </p>
+        <p>
+            <h1>Select the font of the whole website</h1>
+            <small><small>this will change the font style of your website</small></small>
+            <select name="fontFamily" id="fonts">
+                <option value="Andale Mono">Andale Mono</option>
+                <option value="Arial">Arial</option>
+                <option value="Arial Bold">Arial Bold</option>
+                <option value="Arial Italic">Arial Italic</option>
+                <option value="Arial Bold Italic">Arial Bold Italic</option>
+                <option value="Arial Black">Arial Black</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Comic Sans MS Bold">Comic Sans MS Bold</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Courier New Bold">Courier New Bold</option>
+                <option value="Courier New Italic">Courier New Italic</option>
+                <option value="Courier New Bold Italic">Courier New Bold Italic</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Georgia Bold">Georgia Bold</option>
+                <option value="Georgia Italic">Georgia Italic</option>
+                <option value="Georgia Bold Italic">Georgia Bold Italic</option>
+                <option value="Impact">Impact</option>
+                <option value="Lucida Console">Lucida Console</option>
+                <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                <option value="Marlett">Marlett</option>
+                <option value="Minion Web">Minion Web</option>
+                <option value="Symbol">Symbol</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Times New Roman Bold">Times New Roman Bold</option>
+                <option value="Times New Roman Italic">Times New Roman Italic</option>
+                <option value="Times New Roman Bold Italic">Times New Roman Bold Italic</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Trebuchet MS Bold">Trebuchet MS Bold</option>
+                <option value="Trebuchet MS Italic">Trebuchet MS Italic</option>
+                <option value="Trebuchet MS Bold Italic">Trebuchet MS Bold Italic</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Verdana Bold">Verdana Bold</option>
+                <option value="Verdana Italic">Verdana Italic</option>
+                <option value="Verdana Bold Italic">Verdana Bold Italic</option>
+                <option value="Webdings">Webdings</option>
+            </select>
+        </p>
+    </div>
 </body>
 <script>
     getComputedStyle(document.documentElement).getPropertyValue()
