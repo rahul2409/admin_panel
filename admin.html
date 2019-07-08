@@ -41,7 +41,7 @@
                 Select your Primary Color here :
             </h1>
             <small><small>Primary includes the background color.</small></small>
-            <input type="color" name="primaryColor" id="primary" value="#ffffff">
+            <input type="color" name="primaryColor" id="primary" value="#ffffff" onchange="changePrimary(this.value)">
         </p>
         <p>
             <h1>Select your Secondary Color here: </h1>
@@ -105,6 +105,9 @@
     </div>
 </body>
 <script>
-    getComputedStyle(document.documentElement).getPropertyValue()
+    function changePrimary(value){
+        document.documentElement.style.setProperty('--primary-color', value);
+        console.log("value is "+value);
+    }
 </script>
 </html>
