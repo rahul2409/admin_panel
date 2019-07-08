@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    
-   
+    <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
@@ -41,29 +41,29 @@
                 Select your Primary Color here :
             </h1>
             <small><small>Primary includes the background color.</small></small>
-            <input type="color" name="primaryColor" id="primary" value="#ffffff" onchange="changePrimary(this.value)">
+            <input type="color" name="primaryColor" id="primary" onchange="changePrimary(this.value)">
         </p>
         <p>
             <h1>Select your Secondary Color here: </h1>
             <small><small>Secondary includes the contrast color of the backgrounds </small></small>
-            <input type="color" name="secondaryColor" id="secondary" value="#ffffff">
+            <input type="color" name="secondaryColor" id="secondary" onchange="changeSecondary(this.value)">
         </p>
         <p>
             <h1>Select the color of the navbar</h1>
             <small><small>This will be the color of the navbar</small></small>
-            <input type="color" name="navbarColor" id="navbar" value="#ffffff">
+            <input type="color" name="navbarColor" id="navbar" onchange="changeNavbar(this.value)">
         </p>
         <p>
             <h1>
                 Select your Font Color here :
             </h1>
             <small><small>This includes the font color </small></small>
-            <input type="color" name="fontColor" value="#000000">
+            <input type="color" name="fontColor" onchange="changeFont(this.value)">
         </p>
         <p>
             <h1>Select the font of the whole website</h1>
             <small><small>this will change the font style of your website</small></small>
-            <select name="fontFamily" id="fonts">
+            <select name="fontFamily" id="fonts" onchange="changeFamily(this.value)">
                 <option value="Andale Mono">Andale Mono</option>
                 <option value="Arial">Arial</option>
                 <option value="Arial Bold">Arial Bold</option>
@@ -107,6 +107,22 @@
 <script>
     function changePrimary(value){
         document.documentElement.style.setProperty('--primary-color', value);
+        console.log("value is "+value);
+    }
+    function changeSecondary(value){
+        document.documentElement.style.setProperty('--secondary-color', value);
+        console.log("value is "+value);
+    }
+    function changeNavbar(value){
+        document.documentElement.style.setProperty('--navbar-color', value);
+        console.log("value is "+value);
+    }
+    function changeFont(value){
+        document.documentElement.style.setProperty('--font-color', value);
+        console.log("value is "+value);
+    }
+    function changeFamily(value){
+        document.documentElement.style.setProperty('--font-family', value);
         console.log("value is "+value);
     }
 </script>

@@ -1,11 +1,3 @@
-:root {
-    --primary-color : #ffffff;
-    --secondary-color : #ffffff;
-    --navbar-color : #ffffff;
-    --font-color : #000000;
-    --font-family : arial;
-}
-
 .navbar{
     background-color: var(--navbar-color);
     font-family: var(--font-family);
